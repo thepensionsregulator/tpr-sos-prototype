@@ -1,0 +1,162 @@
+
+<html lang="en" class="govuk-template">
+
+{% include "includes/head.html" %}
+
+<body class="govuk-template__body js-enabled govuk-frontend-supported">
+
+    {% include "includes/scripts_head.html" %}
+
+    {% include "includes/header.html" %}
+
+    <div class="govuk-width-container">
+
+    <!--
+    {% include "includes/beta.html" %}
+    -->
+
+        <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="schemes.html">My pension schemes</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_details.html">PSR 123456789</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_valuation_data.html">View and submit scheme valuation data</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_valuation_data.html">SoS risk assessment progress</a>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- <a href="javascript:window.history.back();" class="govuk-back-link">Back</a> -->
+        
+        <main class="govuk-main-wrapper" id="main-content" style="padding-top: 50px;">
+                  
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+
+                    <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
+
+                    <!-- <span class="govuk-caption-l" style="margin-bottom: 5px;">PSR 123456789</span> -->
+
+                    <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">SoS risk assessment progress</h1>
+
+                     <div class="hmcts-progress-bar-vertical" role="progressbar">
+                      <ol class="hmcts-progress-bar__list">
+                        <li class="hmcts-progress-bar__list-item">
+                          <span class="hmcts-progress-bar__icon hmcts-progress-bar__icon--complete"></span>
+                          <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Step 1: </span>Application received</span>
+                        </li>
+                        <li class="hmcts-progress-bar__list-item">
+                          <span class="hmcts-progress-bar__icon hmcts-progress-bar__icon--complete"></span>
+                          <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Current Step 2: </span>Documents received</span>
+                        </li>
+                        <li class="hmcts-progress-bar__list-item" style="width:120px">
+                          <span class="hmcts-progress-bar__icon hmcts-progress-bar__icon--complete"></span>
+                          <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Step 3: </span>Application <br>in review</span>
+                        </li>
+                        <li class="hmcts-progress-bar__list-item">
+                          <span class="hmcts-progress-bar__icon"></span>
+                          <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Step 4: </span>Grant <br>issued</span>
+                        </li>
+                      </ol>
+                    </div>
+
+                    <br><Br><Br>
+
+                    <div class="slds-progress">
+                      <ol class="slds-progress__list">
+                        <li class="slds-progress__item slds-is-completed">
+                          <div class="slds-progress__marker slds-progress__marker_icon" tabindex="0">
+                            <svg class="slds-icon slds-icon_xx-small" aria-hidden="true">
+                              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#success"></use>
+                            </svg>
+                            <span class="slds-assistive-text">Step 1 - Completed</span>
+                          </div>
+                        </li>
+                        <li class="slds-progress__item slds-is-completed">
+                          <div class="slds-progress__marker slds-progress__marker_icon" tabindex="0">
+                            <svg class="slds-icon slds-icon_xx-small" aria-hidden="true">
+                              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#success"></use>
+                            </svg>
+                            <span class="slds-assistive-text">Step 2 - Completed</span>
+                          </div>
+                        </li>
+                        <li class="slds-progress__item slds-is-active">
+                          <div class="slds-progress__marker" tabindex="0">
+                            <span class="slds-assistive-text">Step 3 - Active</span>
+                          </div>
+                        </li>
+                        <li class="slds-progress__item">
+                          <div class="slds-progress__marker" tabindex="0">
+                            <span class="slds-assistive-text">Step 4 </span>
+                          </div>
+                        </li>
+                        <li class="slds-progress__item">
+                          <div class="slds-progress__marker" tabindex="0">
+                            <span class="slds-assistive-text">Step 5 </span>
+                          </div>
+                        </li>
+                      </ol>
+                      <div class="slds-progress-bar slds-progress-bar_x-small" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" role="progressbar">
+                        <span class="slds-progress-bar__value" style="width:50%">
+                          <span class="slds-assistive-text">Progress: 50%</span>
+                        </span>
+                      </div>
+                    </div>
+
+                    <!--
+                    <p class="govuk-body">govuk-body</p>
+                    -->
+
+                    <br><br><br><br><br><br>
+
+                    <!-- ///////////////////////////////////////  END of BODY  //////////////////////////////////////// -->
+
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    
+    {% include "includes/footer.html" %}
+
+    {% include "includes/tpr-stylesheets.scss" %}
+
+    <style type="text/css">
+
+        body { overflow: hidden;}
+
+        .hmcts-progress-bar__icon--complete {
+          background-image: url(../../assets/images/icon-progress-tick.png);
+        }
+
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__list-item  { width:100px; display:inline-block }
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__icon { background-color: #fff;border: 4px solid #CECECE}
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__icon--complete {  background-color: #1D70B8; border: 4px solid #1D70B8}
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__list::before { border-top: 4px solid #CECECE; }
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__list-item[aria-current=step] span.hmcts-progress-bar__icon {  background-color:#1D70B8; border:4px solid #1D70B8 }
+
+        @media screen and (max-width:1200px) {
+
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__list-item { max-width:45px; display:block; margin-top: 10px; }
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__list::before { border-top:none; position:absolute; top: 0px; border-left: 6px solid #CECECE; height: 100%; position:absolute; left:20px; top:0; }
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__label { margin-top:-25px; margin-left:50px; width:350px; text-align:left }
+
+          }
+          
+    </style>
+
+</body>
+
+</html>

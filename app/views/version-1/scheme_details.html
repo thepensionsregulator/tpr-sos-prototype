@@ -1,0 +1,126 @@
+
+<html lang="en" class="govuk-template">
+
+{% include "includes/head.html" %}
+
+<body class="govuk-template__body js-enabled govuk-frontend-supported">
+
+    {% include "includes/scripts_head.html" %}
+
+    {% include "includes/header.html" %}
+
+    <div class="govuk-width-container">
+
+    <!--
+    {% include "includes/beta.html" %}
+    -->
+        
+        <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="schemes.html">My pension schemes</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_details.html">PSR 123456789</a>
+            </li>
+          </ol>
+        </nav>
+        
+        <main class="govuk-main-wrapper" id="main-content" style="padding-top: 20px;">
+                  
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+
+                    <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
+
+                    <!-- <span class="govuk-caption-l" style="margin-bottom: 5px;">PSR 123456789</span> -->
+
+                    <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">PSR 123456789</h1>
+
+                    <div class="govuk-inset-text" style="margin-bottom: 20px;">
+                      The following are the options available to you for a scheme of this type.
+                    </div>
+
+                    <!--
+                    <p class="govuk-body">govuk-body</p>
+                    -->
+
+                    <table class="govuk-table" style="margin-bottom: 40px;">
+                      <!--<caption class="govuk-table__caption govuk-table__caption--m">Active pension schemes</caption>-->
+                      <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                          <th scope="col" class="govuk-table__header app-custom-class"></th>
+                        </tr>
+                      </thead>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">Update scheme details</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">View and maintain scheme levy</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">Winding or wound up information (including section 72A reports)</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">View and submit a notifiable event report</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">View and submit a breach of law report</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">View and submit contingent asset certificates</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">View and submit deficit reduction contribution details</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">View and submit transfer information</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">View and submit scheme return</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">View and submit a recovery plan</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="scheme_valuation_data.html" style="color:#1d70b8;text-decoration: none;">View and submit scheme valuation data</a> &nbsp; <strong class="govuk-tag">New</strong></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">View and submit a segregation request</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">Manage who can access this scheme online</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">Remove this scheme from my list</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">Manage pensions dashboards nominated contact details</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- ///////////////////////////////////////  END of BODY  //////////////////////////////////////// -->
+
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    
+    {% include "includes/footer.html" %}
+
+    {% include "includes/tpr-stylesheets.scss" %}
+
+</body>
+
+</html>

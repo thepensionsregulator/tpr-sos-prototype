@@ -1,0 +1,144 @@
+
+<html lang="en" class="govuk-template">
+
+{% include "includes/head.html" %}
+
+<body class="govuk-template__body js-enabled govuk-frontend-supported">
+
+    {% include "includes/scripts_head.html" %}
+
+    {% include "includes/header.html" %}
+
+    <div class="govuk-width-container">
+
+    <!--
+    {% include "includes/beta.html" %}
+    -->
+
+        <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="schemes.html">My pension schemes</a>
+            </li>
+            <!--
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="#">Lorum</a>
+            </li>
+            -->
+          </ol>
+        </nav>
+
+        <main class="govuk-main-wrapper" id="main-content" style="padding-top: 20px;">
+                  
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+
+                    <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
+
+                    <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">My pension schemes</h1>
+
+                    <div class="govuk-inset-text" style="margin-bottom: 30px;">
+                      This page shows all the schemes that you’re currently associated with.
+                      <br>
+                      To view a particular scheme details, select the PSR number in the list.
+                    </div>
+
+                    <!--
+                    <p class="govuk-body">govuk-body</p>
+                    -->
+
+                    <table class="govuk-table" style="margin-bottom: 40px;">
+                      <caption class="govuk-table__caption govuk-table__caption--m">Active pension schemes</caption>
+                      <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                          <th scope="col" class="govuk-table__header app-custom-class">PSR</th>
+                          <th scope="col" class="govuk-table__header app-custom-class">Name</th>
+                          <th scope="col" class="govuk-table__header app-custom-class">Type</th>
+                          <th scope="col" class="govuk-table__header app-custom-class">Benefit</th>
+                          <th scope="col" class="govuk-table__header app-custom-class">Start date</th>
+                          <th scope="col" class="govuk-table__header app-custom-class">Return date</th>
+                          <th scope="col" class="govuk-table__header app-custom-class">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="scheme_details.html" style="color:#1d70b8;text-decoration: none;">12345678</a></td>
+                          <td class="govuk-table__cell">Dummy scheme for testing</td>
+                          <td class="govuk-table__cell">Occupational</td>
+                          <td class="govuk-table__cell">Defined benefit</td>
+                          <td class="govuk-table__cell">2022</td>
+                          <td class="govuk-table__cell">2023</td>
+                          <td class="govuk-table__cell"><strong class="govuk-tag">Paid up </strong></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">23456789</a></td>
+                          <td class="govuk-table__cell">Another dummy scheme </td>
+                          <td class="govuk-table__cell">Occupational</td>
+                          <td class="govuk-table__cell">Defined benefit</td>
+                          <td class="govuk-table__cell">2023</td>
+                          <td class="govuk-table__cell">2024</td>
+                          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">Unpaid </strong></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">34567890</a></td>
+                          <td class="govuk-table__cell">Other scheme for testing</td>
+                          <td class="govuk-table__cell">Occupational</td>
+                          <td class="govuk-table__cell">Defined benefit</td>
+                          <td class="govuk-table__cell">2022</td>
+                          <td class="govuk-table__cell">2023</td>
+                          <td class="govuk-table__cell"><strong class="govuk-tag">Paid up </strong></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">45678901</a></td>
+                          <td class="govuk-table__cell">More schemes for testing</td>
+                          <td class="govuk-table__cell">Occupational</td>
+                          <td class="govuk-table__cell">Defined benefit</td>
+                          <td class="govuk-table__cell">2022</td>
+                          <td class="govuk-table__cell">2023</td>
+                          <td class="govuk-table__cell"><strong class="govuk-tag">Paid up </strong></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">56789012</a></td>
+                          <td class="govuk-table__cell">Last dummy scheme </td>
+                          <td class="govuk-table__cell">Occupational</td>
+                          <td class="govuk-table__cell">Defined benefit</td>
+                          <td class="govuk-table__cell">2023</td>
+                          <td class="govuk-table__cell">2024</td>
+                          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">Pending </strong></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <a href="#0"><button type="submit" class="govuk-button" data-module="govuk-button" style="background-color: #0381a2;">Register a new pension scheme</button></a>
+
+                    <p class="govuk-body">
+                      <a href="#0" style="color:#1d70b8;">View archived pension schemes</a>
+                    </p>
+
+                    <p class="govuk-body">
+                      <a href="#0" style="color:#1d70b8;">Report a missing pension scheme</a>
+                    </p>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- ///////////////////////////////////////  END of BODY  //////////////////////////////////////// -->
+
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    
+    {% include "includes/footer.html" %}
+
+    {% include "includes/tpr-stylesheets.scss" %}
+
+</body>
+
+</html>

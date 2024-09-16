@@ -1,0 +1,236 @@
+
+<html lang="en" class="govuk-template">
+
+{% include "includes/head.html" %}
+
+<body class="govuk-template__body js-enabled govuk-frontend-supported">
+
+    {% include "includes/scripts_head.html" %}
+
+    {% include "includes/header.html" %}
+
+    <div class="govuk-width-container">
+
+    <!--
+    {% include "includes/beta.html" %}
+    -->
+        
+        <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="dashboard.html">Dashboard</a>
+            </li>
+            <!--
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="#">Lorum</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="#">Lorum</a>
+            </li>
+            -->
+          </ol>
+        </nav>
+
+        <main class="govuk-main-wrapper" id="main-content" style="padding-top: 20px;">
+                  
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+
+                    <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
+
+                    <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Dashboard</h1>
+
+                    <!--
+                    <p class="govuk-body">govuk-body</p>
+                    -->
+
+                    <div class="govuk-grid-row">
+                      <div class="govuk-grid-column-one-third card">
+                        <div style="color: #000000; padding: 20px 20px 10px 20px;height: 160;" class="card-body active">
+                          <p class="govuk-heading-m card-heading">My pension schemes </p>
+                          <p>This page shows all the schemes that you’re currently associated with.</p>
+                          <p class="govuk-body white-link"><a href="schemes.html" style="text-decoration: underline;" class="white-link">View my pension schemes</a></p>
+                        </div>
+                      </div>
+                      <div class="govuk-grid-column-one-third">
+                        <div style="color: #000000; background-color: #ededed;padding: 20px 20px 10px 20px;height: 160;">
+                          <p class="govuk-heading-m">Title </p>
+                          <p>Text <br><br><br> </p>
+                          <p class="govuk-body"><a href="schemes.html" style="color:#1d70b8;">Link</a></p>
+                        </div>
+                      </div>
+                      <div class="govuk-grid-column-one-third">
+                        <div style="color: #000000; background-color: #ededed;padding: 20px 20px 10px 20px;height: 160;">
+                          <p class="govuk-heading-m">Title </p>
+                          <p>Text <br><br><br> </p>
+                          <p class="govuk-body"><a href="schemes.html" style="color:#1d70b8;">Link</a></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <br>
+
+                    <div class="govuk-grid-row">
+                      <div class="govuk-grid-column-one-third">
+                        <div style="color: #000000; background-color: #ededed;padding: 20px 20px 10px 20px;height: 160;"> 
+                          <p class="govuk-heading-m">Title </p>
+                          <p>Text <br><br><br> </p>
+                          <p class="govuk-body"><a href="schemes.html" style="color:#1d70b8;color:#1d70b8;">Link</a></p>
+                        </div>
+                      </div>
+                      <div class="govuk-grid-column-one-third">
+                        <div style="color: #000000; background-color: #ededed;padding: 20px 20px 10px 20px;height: 160;">
+                          <p class="govuk-heading-m">Title </p>
+                          <p>Text <br><br><br> </p>
+                          <p class="govuk-body"><a href="schemes.html" style="color:#1d70b8;color:#1d70b8;">Link</a></p>
+                        </div>
+                      </div>
+                      <div class="govuk-grid-column-one-third">
+                        <div style="color: #000000; background-color: #ededed;padding: 20px 20px 10px 20px;height: 160;">
+                          <p class="govuk-heading-m">Title </p>
+                          <p>Text <br><br><br> </p>
+                          <p class="govuk-body"><a href="schemes.html" style="color:#1d70b8;color:#1d70b8;">Link</a></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- ///////////////////////////////////////  END of BODY  //////////////////////////////////////// -->
+
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    
+    {% include "includes/footer.html" %}
+
+    {% include "includes/tpr-stylesheets.scss" %}
+
+    <style type="text/css">
+        
+        .card {
+          border: 0px solid #ededed;
+        }
+        .card.inactive {
+          color: #ededed;
+        }
+        .card .card-heading {
+          margin-top: 0;
+        }
+        .card .card-body {
+          border-bottom: 0px solid #ededed;
+          padding: 12px;
+        }
+        .card .card-body *:last-child {
+          margin-bottom: 0;
+        }
+        .card .card-body.active {
+          background-color: #ededed;
+          transition: 0.1s ease-in-out;
+        }
+        .card .card-body.active .card-heading a {
+          color: #1d70b8;
+          margin-top: 0;
+        }
+        .card .card-body .status {
+          border-radius: 2px;
+          color: #ffffff;
+          margin-bottom: 8px;
+          padding: 3px 6px 1px;
+          transition: 0.1s ease-in;
+        }
+        .card .card-body .status-low {
+          border: 0px solid #ededed;
+          color: #ededed;
+        }
+        .card .card-body .status-high {
+          background-color: #ededed;
+          border: 0px solid #ededed;
+        }
+        .card .card-body .status-med {
+          background-color: #ededed;
+          border: 0px solid #ededed;
+        }
+        .card .card-body .detail-large {
+          font-size: 48px;
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+        .card .card-body .detail {
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+        .card .card-action {
+          border-top: 0;
+          padding: 12px;
+        }
+        .card .card-action a {
+          border-bottom: 0px solid #1d70b8;
+          color: #ffffff;
+          line-height: 1.5em;
+        }
+        .card .card-action a:link, .card .card-action a:visited {
+          color: #ffffff;
+        }
+        .card .card-action a:hover {
+          border-bottom: 0px solid #483b8b;
+          color: #ffffff;
+        }
+        a:hover, .white-link:hover {
+          color: #ffffff;
+        }
+        .card .card-action ul {
+          margin: 0;
+        }
+        .card .card-action ul li {
+          margin: 0 0 1em;
+        }
+        .card .card-action ul li:last-child {
+          margin-bottom: 0;
+        }
+        .js-enabled .card-body.active:hover {
+          background-color: #483b8b;
+          color: #ffffff;
+          cursor: cursor;
+        }
+        .js-enabled .card-body.active:hover p, .js-enabled .card-body.active:hover li {
+          color: #ffffff;
+        }
+        .js-enabled .card-body.active:hover .card-heading a {
+          color: #1d70b8;
+        }
+        .js-enabled .card-body.active:hover .status-low {
+          border: 1px solid #ffffff;
+          color: #ffffff;
+          transition-delay: 0.25s;
+        }
+        .js-enabled .card-body.active:hover .status-med {
+          background-color: #483b8b;
+          border: 1px solid #ffffff;
+          color: #ffffff;
+          transition-delay: 0.25s;
+        }
+        .js-enabled .card-body.active:hover .status-high {
+          border: 1px solid #ffffff;
+          transition-delay: 0.25s;
+        }
+        .js-enabled .card-body.active:hover .detail-large {
+          color: #ffffff;
+          transition-delay: 0.25s;
+        }
+        .js-enabled .card-body.active a {
+          display: inline-block;
+          text-decoration: none;
+          color: #1d70b8;
+        }
+
+    </style>
+
+</body>
+
+</html>

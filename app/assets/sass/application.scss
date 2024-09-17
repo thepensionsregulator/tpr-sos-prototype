@@ -1,6 +1,194 @@
-//
-// For guidance on how to add CSS and SCSS see:
-// https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
-// 
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+$govuk-new-link-styles: true;
 
-// Add extra styles here
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import ".tmp/sass/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/contents-list";
+@import "patterns/mainstream-guide";
+@import "patterns/pagination";
+@import "patterns/related-items";
+@import "patterns/task-list";
+@import "patterns/custom";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+@import "node_modules/@ministryofjustice/frontend/moj/all";
+
+.govuk-panel--informational {
+  background-color: $govuk-brand-colour;
+  color: govuk-colour("white");
+  margin-bottom: govuk-spacing(7);
+}
+
+.govuk-panel--small {
+  text-align: left;
+  padding: govuk-spacing(3) - $govuk-border-width;
+  margin-bottom: govuk-spacing(5);
+
+  .govuk-panel__title {
+    @include govuk-font($size: 19, $weight: bold);
+    margin-bottom: 0;
+  }
+
+  .govuk-panel__body {
+    @include govuk-font($size: 19);
+    margin: 0;
+  }
+}
+
+.govuk-panel--interruption {
+  background-color: $govuk-brand-colour;
+  text-align: left;
+
+  * {
+    color: govuk-colour("white");
+  }
+
+  .govuk-radios__label::before,
+  & ::after {
+    color: govuk-colour("black");
+    border-color: govuk-colour("black");
+    background-color: govuk-colour("white");
+  }
+
+  .govuk-list--definition {
+    dt,
+    dd {
+      color: govuk-colour("blue");
+    }
+  }
+
+  .govuk-button,
+  .govuk-button:disabled:hover {
+    color: govuk-colour("black");
+    background-color: govuk-colour("white");
+    box-shadow: 0 2px 0 govuk-colour("dark-blue");
+  }
+
+  .govuk-button:hover {
+    background-color: govuk-colour("light-grey");
+  }
+}
+
+.gem-c-attachment__thumbnail-image {
+
+    width: auto;
+    max-width: 99px;
+    height: 140px;
+    border: rgba(11,12,12,0.1);
+    outline: 5px solid rgba(11,12,12,0.1);
+    background: #fff;
+    box-shadow: 0 2px 2px rgb(11 12 12 / 40%);
+    fill: #505A5F;
+    stroke: #505A5F;
+}
+
+.gem-c-attachment {
+    font-family: "GDS Transport",arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25;
+    position: relative;
+}
+
+.gem-attachment-float {
+  float: right;
+  padding-bottom: 30px;
+  padding-right: 220px;
+}
+
+
+.gem-c-attachment__title {
+    font-family: "GDS Transport",arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 24px;
+    font-size: 1.125rem;
+    line-height: 1.1111111111;
+    margin: 0 0 15px;
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-main-wrapper {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-main-wrapper--auto-spacing:first-child,
+.govuk-main-wrapper--l {
+    padding-top: 20px;
+  }
+}
+
+.govuk-main-wrapper {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (min-width: 40.0625em) {
+  .govuk-main-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.govuk-main-wrapper--auto-spacing:first-child,
+.govuk-main-wrapper--l {
+  padding-top: 30px;
+}
+@media (min-width: 40.0625em) {
+  .govuk-main-wrapper--auto-spacing:first-child,
+.govuk-main-wrapper--l {
+    padding-top: 10px;
+  }
+}
+
+.govuk-width-container {
+  max-width: 1100px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+@supports (margin: max(calc(0px))) {
+  .govuk-width-container {
+    margin-right: max(15px, calc(15px + env(safe-area-inset-right)));
+    margin-left: max(15px, calc(15px + env(safe-area-inset-left)));
+  }
+}
+@media (min-width: 40.0625em) {
+  .govuk-width-container {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  @supports (margin: max(calc(0px))) {
+    .govuk-width-container {
+      margin-right: max(30px, calc(15px + env(safe-area-inset-right)));
+      margin-left: max(30px, calc(15px + env(safe-area-inset-left)));
+    }
+  }
+}
+@media (min-width: 1020px) {
+  .govuk-width-container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @supports (margin: max(calc(0px))) {
+    .govuk-width-container {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+

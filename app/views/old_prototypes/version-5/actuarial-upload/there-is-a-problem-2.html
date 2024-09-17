@@ -1,0 +1,119 @@
+{% extends "includes/layout.html" %}
+
+{% block pageTitle %}
+There is a problem with your file
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/backlink.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+    {% include "includes/psr-number.html" %}
+    <h1 class="govuk-heading-l">Are these entries correct?</h1>
+
+
+
+    <p class="govuk-body">Confirm these entries are correct by ticking the checkbox in the 'Correct?' column.</p>
+
+<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+     Cell
+    </dt>
+    <dd class="govuk-summary-list__key">
+  Details
+    </dd>
+    <dd class="govuk-summary-list__key">
+      Correct?
+    </dd>
+  </div>
+         <div class="govuk-summary-list__row">
+           <dt class="govuk-summary-list__key">
+            C2 to C5
+           </dt>
+           <dd class="govuk-summary-list__value">
+          Total for Part 3 Valuation' must add up to 100%
+           </dd>
+           <dd class="govuk-summary-list__actions">
+               <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+             <div class="govuk-checkboxes__item">
+               <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+               <label class="govuk-label govuk-checkboxes__label" for="organisation">
+
+               </label>
+             </div>
+             </div>
+           </dd>
+         </div>
+         <div class="govuk-summary-list__row">
+           <dt class="govuk-summary-list__key">
+          G10
+           </dt>
+           <dd class="govuk-summary-list__value">
+             Date of submission must be in format DD/MM/YYYY. For example 31/12/2022
+           </dd>
+           <dd class="govuk-summary-list__actions">
+             <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+           <div class="govuk-checkboxes__item">
+             <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+             <label class="govuk-label govuk-checkboxes__label" for="organisation">
+
+             </label>
+           </div>
+           </div>
+           </dd>
+         </div>
+         <div class="govuk-summary-list__row">
+           <dt class="govuk-summary-list__key">
+            I3
+           </dt>
+           <dd class="govuk-summary-list__value">
+          	The proportions of service for active members do not add to 100%
+           </dd>
+           <dd class="govuk-summary-list__actions">
+             <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+           <div class="govuk-checkboxes__item">
+             <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+             <label class="govuk-label govuk-checkboxes__label" for="organisation">
+
+             </label>
+           </div>
+           </div>
+           </dd>
+         </div>
+         <div class="govuk-summary-list__row">
+           <dt class="govuk-summary-list__key">
+             I11
+           </dt>
+           <dd class="govuk-summary-list__value">
+          	The proportions of service for pensioner members do not add to 100%
+           </dd>
+           <dd class="govuk-summary-list__actions">
+             <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+           <div class="govuk-checkboxes__item">
+             <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+             <label class="govuk-label govuk-checkboxes__label" for="organisation">
+
+             </label>
+           </div>
+           </div>
+           </dd>
+         </div>
+       </dl>
+
+<p>If any entries are not correct, you will need to update the spreadsheet and <a href="upload-actuarial-2">upload it again</a>.</p>
+<form action="check-your-answers" method="post">
+<button class="govuk-button" data-module="govuk-button">
+  Save and  continue
+</button>
+</form>
+
+  <p><a href="../tasklist.html" class="govuk-link">Save and return</a></p>
+  </div>
+</div>
+<script src="/public/javascripts/radio-to-hidden.js"></script>
+{% endblock %}

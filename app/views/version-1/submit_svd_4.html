@@ -1,0 +1,103 @@
+
+<html lang="en" class="govuk-template">
+
+{% include "includes/head.html" %}
+
+<body class="govuk-template__body js-enabled govuk-frontend-supported">
+
+    {% include "includes/scripts_head.html" %}
+
+    {% include "includes/header.html" %}
+
+    <div class="govuk-width-container">
+
+    <!--
+    {% include "includes/beta.html" %}
+    -->
+
+        <!--
+        <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="schemes.html">My pension schemes</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_details.html">PSR 123456789</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_valuation_data.html">View and submit scheme valuation data</a>
+            </li>
+          </ol>
+        </nav>
+        -->
+
+        <a href="javascript:window.history.back();" class="govuk-back-link">Back</a>
+        
+        <main class="govuk-main-wrapper" id="main-content" style="padding-top: 20px;">
+                  
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+
+                    <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
+
+                    <!-- <span class="govuk-caption-l" style="margin-bottom: 5px;">PSR 123456789</span> -->
+
+                    <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Review the details before submit your scheme valuation data</h1>
+
+                    <table class="govuk-table" style="margin-bottom: 40px;">
+                      <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                          <th scope="col" class="govuk-table__header app-custom-class" colspan="3"></th>
+                        </tr>
+                      </thead>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <th class="govuk-table__cell">Scheme <br>valuation data</th>
+                          <td class="govuk-table__cell">scheme-valuation_data_psr_12345678_v2.pdf</td>
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;">Change</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th class="govuk-table__cell">Supporting document</th>
+                          <td class="govuk-table__cell">supporting_document_psr_12345678_version 6.pdf</td>
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;">Change</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <div class="govuk-warning-text">
+                      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                      <strong class="govuk-warning-text__text">
+                        <span class="govuk-visually-hidden">Warning</span>
+                        This submission will be regarded by us as fully complying with the requirements referred to in Appendix 1, page 44 of the funding code of practice and the statutory requirement under regulation 8(7)(a) of the Scheme Funding Regulations (SI 2005/3377) and Occupational Pensions Schemes (Funding and investment Strategy and Amendment) Regulations 2023.
+                      </strong>
+                    </div>
+
+                    <p class="govuk-body">By submitting your scheme valuation data, you are confirming that, to the best of your knowledge, the details you are providing are correct, and you understand it is a criminal offence under section 80 of the Pensions Act 2004 to knowingly or recklessly supply false or misleading information to The Pensions Regulator.</p>
+
+                    <form action="submit_svd_5.html" style="margin-top: 30px;">
+                      <div class="govuk-button-group">
+                        <button class="govuk-button" data-module="govuk-button" style="background-color: #0381a2;">Submit scheme valuation data</button>
+                        &nbsp;&nbsp;
+                        <a href="scheme_details.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to scheme details</a>
+                      </div>
+                    </form>
+
+                    <!-- ///////////////////////////////////////  END of BODY  //////////////////////////////////////// -->
+
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    
+    {% include "includes/footer.html" %}
+
+    {% include "includes/tpr-stylesheets.scss" %}
+
+</body>
+
+</html>

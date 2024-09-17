@@ -1,9 +1,17 @@
-//
-// For guidance on how to create routes see:
-// https://prototype-kit.service.gov.uk/docs/create-routes
-//
+const express = require('express')
+const router = express.Router()
 
-const govukPrototypeKit = require('govuk-prototype-kit')
-const router = govukPrototypeKit.requests.setupRouter()
+// Add your routes here - above the module.exports line
 
-// Add your routes here
+module.exports = router
+
+// GENERIC NEXT PAGE ELEMENT
+router.post('*', function (req, res, next) {
+  console.log(req.body);
+
+  if (req.body['next-page']) {
+    res.redirect(req.body['next-page']);
+  } else {
+    next();
+  }
+});

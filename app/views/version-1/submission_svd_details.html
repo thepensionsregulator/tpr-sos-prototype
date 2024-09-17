@@ -1,0 +1,321 @@
+
+<html lang="en" class="govuk-template">
+
+{% include "includes/head.html" %}
+
+<body class="govuk-template__body js-enabled govuk-frontend-supported">
+
+    {% include "includes/scripts_head.html" %}
+
+    {% include "includes/header.html" %}
+
+    <div class="govuk-width-container">
+
+    <!--
+    {% include "includes/beta.html" %}
+    -->
+
+        <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="schemes.html">My pension schemes</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_details.html">PSR 123456789</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_valuation_data.html">View and submit scheme valuation data</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_valuation_data.html">SoS risk assessment progress</a>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- <a href="javascript:window.history.back();" class="govuk-back-link">Back</a> -->
+        
+        <main class="govuk-main-wrapper" id="main-content" style="padding-top: 50px;">
+                  
+            <div class="govuk-grid-row">
+
+                <div class="govuk-grid-column-two-thirds">
+
+                    <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
+
+                    <!-- <span class="govuk-caption-l" style="margin-bottom: 5px;">PSR 123456789</span> -->
+
+                    <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Statement of Strategy risk assessment progress</h1>
+
+                     <div class="hmcts-progress-bar-vertical" role="progressbar">
+                      <ol class="hmcts-progress-bar__list">
+                        <li class="hmcts-progress-bar__list-item">
+                          <span class="hmcts-progress-bar__icon hmcts-progress-bar__icon--complete" style="background-color: #cce2d8;border-color: #cce2d8;"></span>
+                          <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Step 1: </span>SVD <br> received</span>
+                        </li>
+                        <li class="hmcts-progress-bar__list-item">
+                          <span class="hmcts-progress-bar__icon hmcts-progress-bar__icon--complete"></span>
+                          <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Current Step 2: </span>SoS <br> generated</span>
+                        </li>
+                        <li class="hmcts-progress-bar__list-item" style="width:120px">
+                          <span class="hmcts-progress-bar__icon"></span>
+                          <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Step 3: </span>SoS <br>signed-off</span>
+                        </li>
+                        <li class="hmcts-progress-bar__list-item">
+                          <span class="hmcts-progress-bar__icon"></span>
+                          <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Step 4: </span>SoS risk <br>assessed</span>
+                        </li>
+                        <li class="hmcts-progress-bar__list-item">
+                          <span class="hmcts-progress-bar__icon"></span>
+                          <span class="hmcts-progress-bar__label"><span class="govuk-visually-hidden">Step 4: </span>SoS risk <br>accepted</span>
+                        </li>
+                      </ol>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <!--
+                    <p class="govuk-body">govuk-body</p>
+                    -->
+
+                    <table class="govuk-table">
+                      <caption class="govuk-table__caption govuk-table__caption--m" style="margin-bottom: 0px;">Scheme Validation Data (SVD) submission details</caption>
+                      <thead class="govuk-table__head" style="margin-top: 0px;">
+                        <tr class="govuk-table__row">
+                          <th scope="col" class="govuk-table__header" colspan="2"></th>
+                        </tr>
+                      </thead>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Status</th>
+                          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">SVD Received </strong></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Effective date</th>
+                          <td class="govuk-table__cell">19/04/2022</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Submitter</th>
+                          <td class="govuk-table__cell">John Smith</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Submission date</th>
+                          <td class="govuk-table__cell">23/07/2022</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">TPR data validation</th>
+                          <td class="govuk-table__cell">Sucessful</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Next action</th>
+                          <td class="govuk-table__cell">TPR system generates SoS</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Submitted SVD file</th>
+                          <td class="govuk-table__cell">scheme-valuation_data_psr_12345678_v2.pdf</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Submitted supporting document</th>
+                          <td class="govuk-table__cell">supporting_document_psr_12345678_version 6.pdf</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Supporting document information</th>
+                          <td class="govuk-table__cell">Actuarial valuation <br>Schedule of contributions <br>Recovery plan</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <form action="#0" style="margin-top: 40px;">
+                      <div class="govuk-button-group">
+                        <button class="govuk-button" data-module="govuk-button" style="background-color: #0381a2;">Download submitted scheme valuation data (pdf)</button>
+                      </div>
+                    </form>
+
+                    <p class="govuk-body">
+                      <a href="view_submission.html" style="color: #1d70b8;display:flex;vertical-align:middle;">View and change submitted scheme valuation data in the screen</a>
+                    </p>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- ///////////////////////////////////////  END of BODY  //////////////////////////////////////// -->
+
+                </div>
+
+                <div class="govuk-grid-column-one-third">
+
+                    <!-- ///////////////////////////////////////  COLUMN  //////////////////////////////////////// -->
+
+                    <div class="card">
+                        <div style="color: #000000; background-color: #ededed; padding: 20px 20px 10px 20px;height: 685;">
+                          <p class="govuk-heading-m card-heading" style="font-size: 22px;">Need help with the risk assessment? </p>
+                          <p>Text</p>
+                          <p class="govuk-body white-link"><a href="#0" style="text-decoration: underline;" class="white-link">Link</a></p>
+                        </div>
+                    </div>
+
+                    <!-- ///////////////////////////////////////  END COLUMN  //////////////////////////////////////// -->
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+    
+    {% include "includes/footer.html" %}
+
+    {% include "includes/tpr-stylesheets.scss" %}
+
+    <style type="text/css">
+
+        body { overflow: hidden;}
+
+        .hmcts-progress-bar__icon--complete {
+          background-image: url(../../assets/images/icon-progress-tick.png);
+        }
+
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__list-item  { width:100px; display:inline-block }
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__icon { background-color: #fff;border: 4px solid #CECECE}
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__icon--complete {  background-color: #1D70B8; border: 4px solid #1D70B8}
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__list::before { border-top: 4px solid #CECECE; }
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__list-item[aria-current=step] span.hmcts-progress-bar__icon {  background-color:#1D70B8; border:4px solid #1D70B8 }
+
+        @media screen and (max-width:1200px) {
+
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__list-item { max-width:45px; display:block; margin-top: 10px; }
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__list::before { border-top:none; position:absolute; top: 0px; border-left: 6px solid #CECECE; height: 100%; position:absolute; left:20px; top:0; }
+        .hmcts-progress-bar-vertical .hmcts-progress-bar__label { margin-top:-25px; margin-left:50px; width:350px; text-align:left }
+
+        }
+          
+    </style>
+
+    <style type="text/css">
+        
+        .card {
+          border: 0px solid #ededed;
+        }
+        .card.inactive {
+          color: #ededed;
+        }
+        .card .card-heading {
+          margin-top: 0;
+        }
+        .card .card-body {
+          border-bottom: 0px solid #ededed;
+          padding: 12px;
+        }
+        .card .card-body *:last-child {
+          margin-bottom: 0;
+        }
+        .card .card-body.active {
+          background-color: #ededed;
+          transition: 0.1s ease-in-out;
+        }
+        .card .card-body.active .card-heading a {
+          color: #1d70b8;
+          margin-top: 0;
+        }
+        .card .card-body .status {
+          border-radius: 2px;
+          color: #ffffff;
+          margin-bottom: 8px;
+          padding: 3px 6px 1px;
+          transition: 0.1s ease-in;
+        }
+        .card .card-body .status-low {
+          border: 0px solid #ededed;
+          color: #ededed;
+        }
+        .card .card-body .status-high {
+          background-color: #ededed;
+          border: 0px solid #ededed;
+        }
+        .card .card-body .status-med {
+          background-color: #ededed;
+          border: 0px solid #ededed;
+        }
+        .card .card-body .detail-large {
+          font-size: 48px;
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+        .card .card-body .detail {
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+        .card .card-action {
+          border-top: 0;
+          padding: 12px;
+        }
+        .card .card-action a {
+          border-bottom: 0px solid #1d70b8;
+          color: #ffffff;
+          line-height: 1.5em;
+        }
+        .card .card-action a:link, .card .card-action a:visited {
+          color: #ffffff;
+        }
+        .card .card-action a:hover {
+          border-bottom: 0px solid #483b8b;
+          color: #ffffff;
+        }
+        a:hover, .white-link:hover {
+          color: #ffffff;
+        }
+        .card .card-action ul {
+          margin: 0;
+        }
+        .card .card-action ul li {
+          margin: 0 0 1em;
+        }
+        .card .card-action ul li:last-child {
+          margin-bottom: 0;
+        }
+        .js-enabled .card-body.active:hover {
+          background-color: #483b8b;
+          color: #ffffff;
+          cursor: cursor;
+        }
+        .js-enabled .card-body.active:hover p, .js-enabled .card-body.active:hover li {
+          color: #ffffff;
+        }
+        .js-enabled .card-body.active:hover .card-heading a {
+          color: #1d70b8;
+        }
+        .js-enabled .card-body.active:hover .status-low {
+          border: 1px solid #ffffff;
+          color: #ffffff;
+          transition-delay: 0.25s;
+        }
+        .js-enabled .card-body.active:hover .status-med {
+          background-color: #483b8b;
+          border: 1px solid #ffffff;
+          color: #ffffff;
+          transition-delay: 0.25s;
+        }
+        .js-enabled .card-body.active:hover .status-high {
+          border: 1px solid #ffffff;
+          transition-delay: 0.25s;
+        }
+        .js-enabled .card-body.active:hover .detail-large {
+          color: #ffffff;
+          transition-delay: 0.25s;
+        }
+        .js-enabled .card-body.active a {
+          display: inline-block;
+          text-decoration: none;
+          color: #1d70b8;
+        }
+
+    </style>
+
+</body>
+
+</html>

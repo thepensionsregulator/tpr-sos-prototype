@@ -146,4 +146,18 @@
     font-size: 1rem;
   }
 
+  .govuk-inset-text {
+    border-left: 10px solid #483b8b;
+  }
+
+  .govuk-button {
+    background-color: #0381a2;
+    box-shadow: 0 2px 0 #000000;
+  }
+
+  .govuk-button:hover {
+    background-color: #483b8b;
+  }
+
+
 </style>

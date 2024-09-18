@@ -47,9 +47,9 @@
                     <div class="govuk-grid-row">
                       <div class="govuk-grid-column-one-third card">
                         <div style="color: #000000; padding: 20px 20px 10px 20px;height: 160;" class="card-body active">
-                          <p class="govuk-heading-m card-heading">My pension schemes </p>
+                          <p class="govuk-heading-m card-heading" style="font-size: 20px;">My pension schemes </p>
                           <p>This page shows all the schemes that you’re currently associated with.</p>
-                          <p class="govuk-body white-link"><a href="schemes.html" style="text-decoration: underline;" class="white-link">View my pension schemes</a></p>
+                          <p class="govuk-body card-heading"><a href="schemes.html" style="text-decoration: underline;">My pension schemes</a></p>
                         </div>
                       </div>
                       <div class="govuk-grid-column-one-third">
@@ -181,9 +181,6 @@
           border-bottom: 0px solid #483b8b;
           color: #ffffff;
         }
-        a:hover, .white-link:hover {
-          color: #ffffff;
-        }
         .card .card-action ul {
           margin: 0;
         }
@@ -227,6 +224,16 @@
           display: inline-block;
           text-decoration: none;
           color: #1d70b8;
+        }
+        .js-enabled .card-body.active:hover .card-heading a {
+          color: #FFFFFF;
+        }
+        .card .card-heading {
+          margin-top: 0;
+        }
+        .card .card-body.active .card-heading a {
+          color: #005EA5;
+          margin-top: 0;
         }
 
     </style>

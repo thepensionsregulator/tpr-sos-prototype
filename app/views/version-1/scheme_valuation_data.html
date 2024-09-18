@@ -58,7 +58,7 @@
                         </tr>
                       </thead>
                       <tbody class="govuk-table__body">
-                        <tr class="govuk-table__row">
+                        <tr class="govuk-table__row hover">
                           <td class="govuk-table__cell" width="25%"><a href="submittion_svd_details.html" style="color:#1d70b8;text-decoration: none;">19/04/2022</a></td>
                           <td class="govuk-table__cell" width="30%">John Smith</td>
                           <td class="govuk-table__cell" width="20%">23/07/2022</td>
@@ -103,6 +103,12 @@
     {% include "includes/footer.html" %}
 
     {% include "includes/tpr-stylesheets.scss" %}
+
+    <style>
+
+      tr.hover:hover {color: #000000;background-color: #f2f2f2;}
+
+    </style>
 
 </body>
 

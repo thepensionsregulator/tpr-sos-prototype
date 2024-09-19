@@ -60,7 +60,7 @@
                         </tr>
                       </thead>
                       <tbody class="govuk-table__body">
-                        <tr class="govuk-table__row">
+                        <tr class="govuk-table__row hover">
                           <td class="govuk-table__cell"><a href="scheme_details.html" style="color:#1d70b8;text-decoration: none;">12345678</a></td>
                           <td class="govuk-table__cell">Dummy scheme for testing</td>
                           <td class="govuk-table__cell">Occupational</td>
@@ -134,6 +134,12 @@
     {% include "includes/footer.html" %}
 
     {% include "includes/tpr-stylesheets.scss" %}
+
+    <style>
+
+      tr.hover:hover {color: #000000;background-color: #f2f2f2;}
+
+    </style>
 
 </body>
 

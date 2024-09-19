@@ -1,0 +1,349 @@
+
+<html lang="en" class="govuk-template">
+
+{% include "includes/head.html" %}
+
+<body class="govuk-template__body js-enabled govuk-frontend-supported">
+
+    {% include "includes/scripts_head.html" %}
+
+    {% include "includes/header.html" %}
+
+    <div class="govuk-width-container">
+
+    <!--
+    {% include "includes/beta.html" %}
+    -->
+
+        <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="schemes.html">My pension schemes</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_details.html">PSR 123456789</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_valuation_data.html">Schemes valuation data</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="svd_submittion_details.html">Submittion 19/04/2022</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="submittion_svd_details.html">Submitted data</a>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- <a href="javascript:window.history.back();" class="govuk-back-link">Back</a> -->
+        
+        <main class="govuk-main-wrapper" id="main-content" style="padding-top: 20px;">
+                  
+            <div class="govuk-grid-row">
+
+                <div class="govuk-grid-column-full">
+
+                    <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
+
+                    <!-- <span class="govuk-caption-l" style="margin-bottom: 5px;">PSR 123456789</span> -->
+
+                    <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Submitted data</h1>
+
+                    <!-- ///////////////////////////////////////  TABS  //////////////////////////////////////// -->
+
+                    <div class="govuk-tabs" data-module="govuk-tabs">
+
+                      <h2 class="govuk-tabs__title">
+                        Contents
+                      </h2>
+                      <ul class="govuk-tabs__list">
+                        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                          <a class="govuk-tabs__tab" href="#past-day">
+                            General information
+                          </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                          <a class="govuk-tabs__tab" href="#past-week">
+                            Actuarial information
+                          </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                          <a class="govuk-tabs__tab" href="#past-month">
+                            Covenant information
+                          </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                          <a class="govuk-tabs__tab" href="#past-year">
+                            Investment information
+                          </a>
+                        </li>
+                      </ul>
+
+                      <!-- ///////////////////////////////////////  TAB 1  //////////////////////////////////////// -->
+
+                      <div class="govuk-tabs__panel" id="past-day" style="border-left: 0px;border-right: 0px;border-bottom: 0px;">
+
+                        <h2 class="govuk-heading-l" style="font-size: 22px;margin-bottom: 0px;">General information</h2>
+
+                        <table class="govuk-table">
+                          <thead class="govuk-table__head" style="margin-top: 0px;">
+                            <tr class="govuk-table__row">
+                              <th scope="col" class="govuk-table__header" colspan="2"></th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header" width="700">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <form action="#0" style="margin-top: 35px;margin-bottom: 0px;">
+                          <div class="govuk-button-group">
+                            <button class="govuk-button" data-module="govuk-button">Change data</button>
+                          </div>
+                        </form>
+
+                        <p class="govuk-body">
+                          <a href="#0" style="color: #1d70b8;">Download submitted general information (pdf)</a>
+                        </p>
+
+                      </div>
+
+                      <!-- ///////////////////////////////////////  TAB 2  //////////////////////////////////////// -->
+
+                      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week" style="border-left: 0px;border-right: 0px;border-bottom: 0px;">
+
+                        <h2 class="govuk-heading-l" style="font-size: 22px;margin-bottom: 0px;">Actuarial information</h2>
+                        
+                        <table class="govuk-table">
+                          <thead class="govuk-table__head" style="margin-top: 0px;">
+                            <tr class="govuk-table__row">
+                              <th scope="col" class="govuk-table__header" colspan="2"></th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header" width="700">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <form action="#0" style="margin-top: 35px;margin-bottom: 0px;">
+                          <div class="govuk-button-group">
+                            <button class="govuk-button" data-module="govuk-button">Change data</button>
+                          </div>
+                        </form>
+
+                        <p class="govuk-body">
+                          <a href="#0" style="color: #1d70b8;">Download submitted actuarial information (pdf)</a>
+                        </p>
+
+                      </div>
+
+                      <!-- ///////////////////////////////////////  TAB 3  //////////////////////////////////////// -->
+
+                      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month" style="border-left: 0px;border-right: 0px;border-bottom: 0px;">
+
+                        <h2 class="govuk-heading-l" style="font-size: 22px;margin-bottom: 0px;">Covenant information</h2>
+                        
+                        <table class="govuk-table">
+                          <thead class="govuk-table__head" style="margin-top: 0px;">
+                            <tr class="govuk-table__row">
+                              <th scope="col" class="govuk-table__header" colspan="2"></th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header" width="700">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <form action="#0" style="margin-top: 35px;margin-bottom: 0px;">
+                          <div class="govuk-button-group">
+                            <button class="govuk-button" data-module="govuk-button">Change data</button>
+                          </div>
+                        </form>
+
+                        <p class="govuk-body">
+                          <a href="#0" style="color: #1d70b8;">Download submitted covenant information (pdf)</a>
+                        </p>
+
+                      </div>
+
+                      <!-- ///////////////////////////////////////  TAB 4  //////////////////////////////////////// -->
+
+                      <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year" style="border-left: 0px;border-right: 0px;border-bottom: 0px;">
+
+                        <h2 class="govuk-heading-l" style="font-size: 22px;margin-bottom: 0px;">Investment information</h2>
+                        
+                        <table class="govuk-table">
+                          <thead class="govuk-table__head" style="margin-top: 0px;">
+                            <tr class="govuk-table__row">
+                              <th scope="col" class="govuk-table__header" colspan="2"></th>
+                            </tr>
+                          </thead>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header" width="700">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Question</th>
+                              <td class="govuk-table__cell">Answer</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <form action="investment_information_form.html" style="margin-top: 35px;margin-bottom: 0px;">
+                          <div class="govuk-button-group">
+                            <button class="govuk-button" data-module="govuk-button">Change data</button>
+                          </div>
+                        </form>
+
+                        <p class="govuk-body">
+                          <a href="#0" style="color: #1d70b8;">Download submitted investment information (pdf)</a>
+                        </p>
+
+                      </div>
+
+                    </div>
+
+                    <!-- ///////////////////////////////////////  END of TABS  //////////////////////////////////////// -->
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- ///////////////////////////////////////  END of BODY  //////////////////////////////////////// -->
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+    
+    {% include "includes/footer.html" %}
+
+    {% include "includes/tpr-stylesheets.scss" %}
+
+</body>
+
+</html>

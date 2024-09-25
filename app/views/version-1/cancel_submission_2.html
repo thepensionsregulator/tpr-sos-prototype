@@ -47,83 +47,50 @@
 
                     <!-- <span class="govuk-caption-l" style="margin-bottom: 5px;">PSR 123456789</span> -->
 
-                    <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">Submission 72446037</h1>
+                    <h1 class="govuk-heading-xl" style="margin-bottom: 40px;">Cancel submission </h1>
 
                     <!--<h2 class="govuk-heading-m" style="font-size: 22px;margin-bottom: 5px;">Scheme Validation Data (SVD) received</h2>-->
 
-                    <table class="govuk-table">
-                      <thead class="govuk-table__head" style="margin-top: 0px;">
-                        <tr class="govuk-table__row">
-                          <th scope="col" class="govuk-table__header" colspan="2"></th>
-                        </tr>
-                      </thead>
-                      <tbody class="govuk-table__body">
-                        <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Status</th>
-                          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">Pending SoS sign-off</strong></td>
-                        </tr>
-                        <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Submission version</th>
-                          <td class="govuk-table__cell">1</td>
-                        </tr>
-                        <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Effective date</th>
-                          <td class="govuk-table__cell">02/10/2023</td>
-                        </tr>
-                        <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Submission date</th>
-                          <td class="govuk-table__cell">16/04/2023</td>
-                        </tr>
-                        <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Submitter</th>
-                          <td class="govuk-table__cell">Sophia Blackburn</td>
-                        </tr>
-                        <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Type of submission</th>
-                          <td class="govuk-table__cell">Fast-track <br>More than 100 members </td>
-                        </tr>
-                        <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Relevant date</th>
-                          <td class="govuk-table__cell">24/03/2019</td>
-                        </tr>
-                        <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Next action</th>
-                          <td class="govuk-table__cell">TPR system generates SoS</td>
-                        </tr>
-                        <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Submitted SVD file</th>
-                          <td class="govuk-table__cell">scheme-valuation_data_psr_12345678_v2.pdf</td>
-                        </tr>
-                        <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Submitted supporting document</th>
-                          <td class="govuk-table__cell">supporting_document_psr_12345678_version 6.pdf</td>
-                        </tr>
-                        <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Supporting document information</th>
-                          <td class="govuk-table__cell">Actuarial valuation <br>Schedule of contributions </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset" aria-describedby="signIn-hint">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                          <h3 class="govuk-fieldset__heading" style="font-size: 22px;">
+                            Are you sure you want to cancel the submission 72446037?
+                          </h3>
+                        </legend>
+                        <div id="signIn-hint" class="govuk-hint">
+                          You cannot rever this cancelation.
+                        </div>
+                        <div class="govuk-radios" data-module="govuk-radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="signIn" name="signIn" type="radio" value="government-gateway" aria-describedby="signIn-item-hint">
+                            <label class="govuk-label govuk-radios__label" for="signIn">
+                              Yes, cancel this submission
+                            </label>
+                            <div id="signIn-item-hint" class="govuk-hint govuk-radios__hint">
+                              You’ll have a user ID if you’ve registered for Self Assessment or filed a tax return online before.
+                            </div>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="signIn-2" name="signIn" type="radio" value="govuk-one-login" aria-describedby="signIn-2-item-hint">
+                            <label class="govuk-label govuk-radios__label" for="signIn-2">
+                              No, do not cancel this submission
+                            </label>
+                            <div id="signIn-2-item-hint" class="govuk-hint govuk-radios__hint">
+                              If you don’t have a GOV.UK One Login, you can create one.
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
 
-                    <form action="sos_risk_assessment_2.html" style="margin-top: 35px;margin-bottom: 10px;">
+                    <form action="submit_svd_5.html" style="margin-top: 30px;">
                       <div class="govuk-button-group">
-                        <button class="govuk-button" data-module="govuk-button">View Statement of Strategy risk assessment</button>
+                        <button class="govuk-button" data-module="govuk-button">Cancel submission</button>
+                        &nbsp;&nbsp;
+                        <a href="scheme_details.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Return to scheme details</a>
                       </div>
                     </form>
-
-                    <form action="cancel_submission_2.html" style="margin-top: 15px;margin-bottom: 10px;">
-                      <div class="govuk-button-group">
-                        <button class="govuk-button govuk-button--warning" type="submit" style="background-color: #d4351c;box-shadow: 0 2px 0 #55150b;">Cancel submission</button>
-                      </div>
-                    </form>
-
-                    <p class="govuk-body">
-                      <a href="view_submitted_data_2.html" style="color: #1d70b8;display:flex;vertical-align:middle;">View and change submitted scheme valuation data </a>
-                    </p>
-
-                    <p class="govuk-body">
-                      <a href="#0" style="color: #1d70b8;display:flex;vertical-align:middle;">Download a PDF copy of your scheme valuation data submission</a>
-                    </p>
 
                     <br>
                     <br>

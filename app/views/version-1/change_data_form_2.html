@@ -1,0 +1,140 @@
+
+<html lang="en" class="govuk-template">
+
+{% include "includes/head.html" %}
+
+<body class="govuk-template__body js-enabled govuk-frontend-supported">
+
+    {% include "includes/scripts_head.html" %}
+
+    {% include "includes/header.html" %}
+
+    <div class="govuk-width-container">
+
+    <!--
+    {% include "includes/beta.html" %}
+    -->
+        
+        <!--
+        <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="schemes.html">My pension schemes</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_details.html">PSR 123456789</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_valuation_data.html">View and submit scheme valuation data</a>
+            </li>
+          </ol>
+        </nav>
+        -->
+
+        <a href="javascript:window.history.back();" class="govuk-back-link">Back</a>
+        
+        <main class="govuk-main-wrapper" id="main-content" style="padding-top: 20px;">
+                  
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+
+                    <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
+
+                    <span class="govuk-caption-l" style="margin-bottom: 5px;">Change submitted data </span>
+
+                    <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Change data </h1>
+
+                    <!--
+                    <div class="govuk-inset-text">
+                      Lorum
+                    </div>
+                    -->
+
+                    <table class="govuk-table">
+                      <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                          <th scope="col" class="govuk-table__header" width="500"> </th>
+                          <th scope="col" class="govuk-table__header app-custom-class" width="200"> </th>
+                        </tr>
+                      </thead>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="change_data_form_3.html" style="color: #1d70b8">Covenant information</a></td>
+                          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started </strong> </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><a href="#0" style="color: #1d70b8">Investment information</a> </td>
+                          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started </strong> </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--
+                    <form action="change_data_form_1.html" style="margin-top: 30px;">
+                      <div class="govuk-button-group">
+                        <button class="govuk-button" data-module="govuk-button">Continue</button>
+                        &nbsp;&nbsp;
+                        <a href="scheme_details.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to submission details</a>
+                      </div>
+                    </form>
+                    -->
+
+                    <!--
+                    <div class="govuk-button-group" style="margin-top: 40px;">
+                      <a href="" onclick='myFunction()' id="link" style="text-decoration: none;">
+                        <button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button>
+                      </a>
+                      &nbsp;&nbsp;
+                      <a href="view_submitted_data_2.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to submission details</a>
+                    </div>
+                    -->
+
+                    <a href="view_submitted_data_2.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to submission details</a>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- ///////////////////////////////////////  END of BODY  //////////////////////////////////////// -->
+
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    
+    {% include "includes/footer.html" %}
+
+    {% include "includes/tpr-stylesheets.scss" %}
+
+    <script>
+
+      function myFunction() {
+
+          if(document.getElementById('option-1').checked) {
+              document.getElementById('link').href = "#0";
+          }
+
+          if(document.getElementById('option-2').checked) {
+              document.getElementById('link').href = "#0";
+          }
+
+          if(document.getElementById('option-3').checked) {
+              document.getElementById('link').href = "change_data_form_3.html";
+          }
+
+          if(document.getElementById('option-4').checked) {
+              document.getElementById('link').href = "change_data_form_3.html";
+          }
+
+      }
+
+    </script>
+
+</body>
+
+</html>

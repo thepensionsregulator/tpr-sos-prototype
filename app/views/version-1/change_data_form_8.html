@@ -1,0 +1,140 @@
+
+<html lang="en" class="govuk-template">
+
+{% include "includes/head.html" %}
+
+<body class="govuk-template__body js-enabled govuk-frontend-supported">
+
+    {% include "includes/scripts_head.html" %}
+
+    {% include "includes/header.html" %}
+
+    <div class="govuk-width-container">
+
+    <!--
+    {% include "includes/beta.html" %}
+    -->
+        
+        <!--
+        <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="schemes.html">My pension schemes</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_details.html">PSR 123456789</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_valuation_data.html">View and submit scheme valuation data</a>
+            </li>
+          </ol>
+        </nav>
+        -->
+
+        <a href="javascript:window.history.back();" class="govuk-back-link">Back</a>
+        
+        <main class="govuk-main-wrapper" id="main-content" style="padding-top: 20px;">
+                  
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+
+                    <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
+
+                    <span class="govuk-caption-l" style="margin-bottom: 5px;">Change submitted data </span>
+
+                    <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Question 1 </h1>
+
+                    <!--
+                    <div class="govuk-inset-text">
+                      Lorum
+                    </div>
+                    -->
+
+                    <div class="govuk-form-group">
+                      <h1 class="govuk-label-wrapper">
+                        <label class="govuk-label govuk-label--l" for="more-detail">
+                          Update your response
+                        </label>
+                      </h1>
+                      <div id="account-number-hint" class="govuk-hint">
+                        Must be between 6 and 8 digits long.
+                      </div>
+                      <input class="govuk-input govuk-input--width-20" id="width-20" name="oneQuarter" type="text" value="Response">
+                    </div>
+
+                    <div class="govuk-form-group" style="margin-top: 40px;">
+                      <fieldset class="govuk-fieldset">
+                        <div class="govuk-radios" data-module="govuk-radios">
+                          <h1 class="govuk-label-wrapper">
+                            <label class="govuk-label govuk-label--l" for="more-detail">
+                              Select why are you changing this information
+                            </label>
+                          </h1>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+                            <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                              The information is incorrect 
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland">
+                            <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+                              The information has change after submission
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="whereDoYouLive-3" name="whereDoYouLive" type="radio" value="wales">
+                            <label class="govuk-label govuk-radios__label" for="whereDoYouLive-3">
+                              TPR requested to change the information
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <!--
+                    <div class="govuk-form-group" style="margin-top: 40px;">
+                      <h1 class="govuk-label-wrapper">
+                        <label class="govuk-label govuk-label--l" for="more-detail">
+                          Explain why you are changing the response
+                        </label>
+                      </h1>
+                      <div id="more-detail-hint" class="govuk-hint">
+                        Do not include personal or financial information.
+                      </div>
+                      <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                    </div>
+                    -->
+
+                    <form action="change_data_form_9.html" style="margin-top: 40px;">
+                      <div class="govuk-button-group">
+                        <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+                        &nbsp;&nbsp;
+                        <a href="scheme_details.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to submission details</a>
+                      </div>
+                    </form>
+
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- ///////////////////////////////////////  END of BODY  //////////////////////////////////////// -->
+
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    
+    {% include "includes/footer.html" %}
+
+    {% include "includes/tpr-stylesheets.scss" %}
+
+</body>
+
+</html>

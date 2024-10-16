@@ -1,0 +1,120 @@
+
+<html lang="en" class="govuk-template">
+
+{% include "includes/head.html" %}
+
+<body class="govuk-template__body js-enabled govuk-frontend-supported">
+
+    {% include "includes/scripts_head.html" %}
+
+    {% include "includes/header.html" %}
+
+    <div class="govuk-width-container">
+
+    <!--
+    {% include "includes/beta.html" %}
+    -->
+
+        <!--
+        <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="schemes.html">My pension schemes</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_details.html">PSR 123456789</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_valuation_data.html">View and submit scheme valuation data</a>
+            </li>
+          </ol>
+        </nav>
+        -->
+
+        <a href="javascript:window.history.back();" class="govuk-back-link">Back</a>
+        
+        <main class="govuk-main-wrapper" id="main-content" style="padding-top: 20px;">
+                  
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+
+                    <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
+
+                    <span class="govuk-caption-l" style="margin-bottom: 5px;">Change submitted data </span>
+
+                    <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Change data for submitted scheme valuation 56789012</h1>
+
+                    <p class="govuk-body">Use this service when TPR ask you to change data in a submitted scheme valuation for your defined benefit (DB) scheme. </p>
+
+                    <!--<p class="govuk-body">Also use this service to support TPR assessment by responding enquiries or sharing additional information when needed.</p>-->
+
+                    <h2 class="govuk-heading-m" style="font-size: 22px;">How to use this service</h2>
+
+                    <p class="govuk-body">You can change the following details when requested by TPR:</p>
+
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li>general information</li>
+                      <li>actuarial information</li>
+                      <li>investment information</li>
+                      <li>covenant information</li>
+                      <li>the copy of the actuarial valuation</li>
+                    </ul>
+
+                    <p class="govuk-body">The requested changes will be completed via web form (no need for re-send a new spreadsheet file). Any changes on the data will require trustee approval (no need for sign-off a new Statement of Strategy).</p>
+
+                    <p class="govuk-body">If your scheme is in deficit at the valuation effective date, we could ask you to send or update:</p>
+
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li>a copy of the schedule of contributions</li>
+                      <li>a copy of the recovery plan</li>
+                    </ul>
+
+                    <p class="govuk-body">In some cases you could be asked to:</p>
+
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li>respond enquiries from TPR </li>
+                      <li>attach additional documents when needed</li>
+                    </ul>
+
+                    <p class="govuk-body">Responding enquiries or attach additional documents can be completed using a different service.</p>
+
+                    <h2 class="govuk-heading-m" style="font-size: 22px;">What is next</h2>
+
+                    <p class="govuk-body">Once we have received your changes, we will ask to your trustee to aporove the changes. The approved changes will be added to the signed-off statement of Strategy.</p>
+
+                    <p class="govuk-body">If your changes do not meet TPR's risk acceptance criteria, we will reject your strategy statement and ask you to submit a new scheme valuation.</p>
+
+                    <!--<a href="submit_2.html"><button type="submit" class="govuk-button" data-module="govuk-button">Continue</button></a> -->
+
+                    <br>
+
+                    <a href="change_data_select_process.html" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+                      Start now
+                      <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+                        <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+                      </svg>
+                    </a>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- ///////////////////////////////////////  END of BODY  //////////////////////////////////////// -->
+
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    
+    {% include "includes/footer.html" %}
+
+    {% include "includes/tpr-stylesheets.scss" %}
+
+</body>
+
+</html>

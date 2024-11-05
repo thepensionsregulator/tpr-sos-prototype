@@ -1,0 +1,68 @@
+
+<html lang="en" class="govuk-template">
+
+{% include "includes/head.html" %}
+
+<body class="govuk-template__body js-enabled govuk-frontend-supported">
+
+    {% include "includes/scripts_head.html" %}
+
+    {% include "includes/header.html" %}
+
+    <div class="govuk-width-container">
+        
+        <main class="govuk-main-wrapper" id="main-content" style="padding-top: 50px;">
+                  
+            <div class="govuk-grid-row">
+
+                <div class="govuk-grid-column-two-thirds">
+
+                    <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
+
+                    <!-- <span class="govuk-caption-l" style="margin-bottom: 5px;">PSR 123456789</span> -->
+
+                    <div class="govuk-panel govuk-panel--confirmation">
+                      <h1 class="govuk-panel__title">Approval complete</h1>
+                      <div class="govuk-panel__body" style="font-size: 2.25rem;">Your reference number is<br><strong>HDJ2123F</strong></div>
+                    </div>
+
+                    <p class="govuk-body">We have sent you a confirmation email.</p>
+
+                    <p class="govuk-body">
+                      <a href="#0" style="color: #1d70b8;display:flex;vertical-align:middle;">Download a PDF copy of your approved annotation in the Statemnent of Strategy.</a>
+                    </p>
+
+                    <h2 class="govuk-heading-m" style="font-size: 22px;margin-top: 15px;">What happens next</h2>
+
+                    <p class="govuk-body">
+                      We’ve sent your annotation to our actuarial team.
+                    </p>
+
+                    <p class="govuk-body">
+                      They will contact you to confirm your annotation has been accepted or ask for additional information.
+                    </p>
+
+                    <a href="#0" style="color: #1d70b8;display:flex;vertical-align:middle;">View approved annotation </a>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- ///////////////////////////////////////  END of BODY  //////////////////////////////////////// -->
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+    
+    {% include "includes/footer.html" %}
+
+    {% include "includes/tpr-stylesheets.scss" %}
+
+
+</body>
+
+</html>

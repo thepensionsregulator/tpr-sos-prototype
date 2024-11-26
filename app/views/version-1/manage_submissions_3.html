@@ -1,0 +1,289 @@
+
+<html lang="en" class="govuk-template">
+
+{% include "includes/head.html" %}
+
+<body class="govuk-template__body js-enabled govuk-frontend-supported">
+
+    {% include "includes/scripts_head.html" %}
+
+    {% include "includes/header.html" %}
+
+    <div class="govuk-width-container">
+
+    <!--
+    {% include "includes/beta.html" %}
+    -->
+        
+        <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="schemes.html">My pension schemes</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="scheme_details.html">PSR 123456789</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="manage_submissions_1.html">Manage submissions</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="manage_submissions_2.html">Valuation 10001234</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="manage_submissions_3.html">Statement of Strategy</a>
+            </li>
+          </ol>
+        </nav>
+        
+        <main class="govuk-main-wrapper" id="main-content" style="padding-top: 20px;">
+                  
+            <div class="govuk-grid-row">
+
+                <div class="govuk-grid-column-two-thirds">
+
+                    <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
+
+                    <!-- <span class="govuk-caption-l" style="margin-bottom: 5px;">PSR 123456789</span> -->
+
+                    <h1 class="govuk-heading-xl" style="margin-bottom: 20px;">Statement of Strategy</h1>
+
+                    <!--<h2 class="govuk-heading-m" style="font-size: 22px;margin-bottom: 5px;">Scheme Validation Data (SVD) received</h2>-->
+
+                    <table class="govuk-table">
+                      <thead class="govuk-table__head" style="margin-top: 0px;">
+                        <tr class="govuk-table__row">
+                          <th scope="col" class="govuk-table__header" colspan="2"></th>
+                        </tr>
+                      </thead>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Status</th>
+                          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow" style="max-width: 240px;">In progress </strong></td>
+                        </tr>
+                        <!--
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Status</th>
+                          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">SVD Received </strong></td>
+                        </tr>
+                        -->
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Submission version</th>
+                          <td class="govuk-table__cell">1</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Effective date</th>
+                          <td class="govuk-table__cell">12/07/2022</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Submission date</th>
+                          <td class="govuk-table__cell">02/09/2022</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Submitter</th>
+                          <td class="govuk-table__cell">John Smith</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Type of submission</th>
+                          <td class="govuk-table__cell">Bespoke <br>Less than 100 members <br>In deficit </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Relevant date</th>
+                          <td class="govuk-table__cell">11/08/2015</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Next action</th>
+                          <td class="govuk-table__cell">TPR to approve or reject the submission</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Submitted SVD file</th>
+                          <td class="govuk-table__cell">scheme-valuation_data_psr_12345678_v2.pdf</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Submitted supporting document</th>
+                          <td class="govuk-table__cell">supporting_document_psr_12345678_version 6.pdf</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Supporting document information</th>
+                          <td class="govuk-table__cell">Actuarial valuation <br>Schedule of contributions <br>Recovery plan </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--
+                    <form action="sos_risk_assessment.html" style="margin-top: 35px;margin-bottom: 10px;">
+                      <div class="govuk-button-group">
+                        <button class="govuk-button" data-module="govuk-button">View Statement of Strategy risk assessment</button>
+                      </div>
+                    </form>
+                    -->
+
+                    <form action="#0" style="margin-top: 35px;margin-bottom: 10px;">
+                      <div class="govuk-button-group">
+                        <button class="govuk-button" data-module="govuk-button">View Statement of Strategy risk assessment</button>
+                      </div>
+                    </form>
+
+                    <form action="#0" style="margin-top: 15px;margin-bottom: 10px;">
+                      <div class="govuk-button-group">
+                        <button class="govuk-button govuk-button--warning" type="submit" style="background-color: #d4351c;box-shadow: 0 2px 0 #55150b;">Cancel submission</button>
+                      </div>
+                    </form>
+
+                    <!--
+                    <p class="govuk-body">
+                      <a href="view_submitted_data.html" style="color: #1d70b8;display:flex;vertical-align:middle;">View and change submitted scheme valuation data </a>
+                    </p>
+                    -->
+
+                    <p class="govuk-body">
+                      <a href="#0" style="color: #1d70b8;display:flex;vertical-align:middle;">View and change submitted scheme valuation data </a>
+                    </p>
+
+                    <p class="govuk-body">
+                      <a href="#0" style="color: #1d70b8;display:flex;vertical-align:middle;">Download a PDF copy of your scheme valuation data submission</a>
+                    </p>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- ///////////////////////////////////////  END of BODY  //////////////////////////////////////// -->
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+    
+    {% include "includes/footer.html" %}
+
+    {% include "includes/tpr-stylesheets.scss" %}
+
+    <style type="text/css">
+        
+        .card {
+          border: 0px solid #ededed;
+        }
+        .card.inactive {
+          color: #ededed;
+        }
+        .card .card-heading {
+          margin-top: 0;
+        }
+        .card .card-body {
+          border-bottom: 0px solid #ededed;
+          padding: 12px;
+        }
+        .card .card-body *:last-child {
+          margin-bottom: 0;
+        }
+        .card .card-body.active {
+          background-color: #ededed;
+          transition: 0.1s ease-in-out;
+        }
+        .card .card-body.active .card-heading a {
+          color: #1d70b8;
+          margin-top: 0;
+        }
+        .card .card-body .status {
+          border-radius: 2px;
+          color: #ffffff;
+          margin-bottom: 8px;
+          padding: 3px 6px 1px;
+          transition: 0.1s ease-in;
+        }
+        .card .card-body .status-low {
+          border: 0px solid #ededed;
+          color: #ededed;
+        }
+        .card .card-body .status-high {
+          background-color: #ededed;
+          border: 0px solid #ededed;
+        }
+        .card .card-body .status-med {
+          background-color: #ededed;
+          border: 0px solid #ededed;
+        }
+        .card .card-body .detail-large {
+          font-size: 48px;
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+        .card .card-body .detail {
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+        .card .card-action {
+          border-top: 0;
+          padding: 12px;
+        }
+        .card .card-action a {
+          border-bottom: 0px solid #1d70b8;
+          color: #ffffff;
+          line-height: 1.5em;
+        }
+        .card .card-action a:link, .card .card-action a:visited {
+          color: #ffffff;
+        }
+        .card .card-action a:hover {
+          border-bottom: 0px solid #483b8b;
+          color: #ffffff;
+        }
+        a:hover, .white-link:hover {
+          color: #ffffff;
+        }
+        .card .card-action ul {
+          margin: 0;
+        }
+        .card .card-action ul li {
+          margin: 0 0 1em;
+        }
+        .card .card-action ul li:last-child {
+          margin-bottom: 0;
+        }
+        .js-enabled .card-body.active:hover {
+          background-color: #483b8b;
+          color: #ffffff;
+          cursor: cursor;
+        }
+        .js-enabled .card-body.active:hover p, .js-enabled .card-body.active:hover li {
+          color: #ffffff;
+        }
+        .js-enabled .card-body.active:hover .card-heading a {
+          color: #1d70b8;
+        }
+        .js-enabled .card-body.active:hover .status-low {
+          border: 1px solid #ffffff;
+          color: #ffffff;
+          transition-delay: 0.25s;
+        }
+        .js-enabled .card-body.active:hover .status-med {
+          background-color: #483b8b;
+          border: 1px solid #ffffff;
+          color: #ffffff;
+          transition-delay: 0.25s;
+        }
+        .js-enabled .card-body.active:hover .status-high {
+          border: 1px solid #ffffff;
+          transition-delay: 0.25s;
+        }
+        .js-enabled .card-body.active:hover .detail-large {
+          color: #ffffff;
+          transition-delay: 0.25s;
+        }
+        .js-enabled .card-body.active a {
+          display: inline-block;
+          text-decoration: none;
+          color: #1d70b8;
+        }
+
+    </style>
+
+</body>
+
+</html>

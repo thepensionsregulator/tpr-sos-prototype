@@ -71,6 +71,16 @@
     font-size: 1rem;
   }
 
+  a:link, .govuk-link:link {
+    font-family: "open sans", sans-serif;
+    font-size: 1rem;
+  }
+
+  .govuk-link--no-visited-state:link {
+    font-family: "open sans", sans-serif;
+    font-size: 1rem;
+  }
+
   .govuk-table__cell {
     font-family: "open sans", sans-serif;
     font-size: 1rem;
@@ -147,6 +157,11 @@
   }
 
   .govuk-warning-text {
+    font-family: "open sans", sans-serif;
+    font-size: 1rem;
+  }
+
+  .govuk-back-link {
     font-family: "open sans", sans-serif;
     font-size: 1rem;
   }

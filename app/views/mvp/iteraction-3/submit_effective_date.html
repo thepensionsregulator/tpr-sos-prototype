@@ -47,27 +47,51 @@
 
                     <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
 
-                    <h1 class="govuk-heading-l" style="margin-bottom: 30px;">Upload a copy of the actuarial valuation</h1>
+                    <h1 class="govuk-heading-l" style="margin-bottom: 30px;">What is the effective date from the most recent scheme funding (Part 3) valuation?</h1>
 
                     <!--
                     <div class="govuk-inset-text">
-                      This must be a copy of the actuarial valuation, wich has been signed by the scheme actuary.
+                      This is the date when the scheme's assets and technical provisions were measured.
                     </div>
                     -->
 
-                    <p>This must be a copy of the actuarial valuation, which has been signed by the scheme actuary.</p>
+                    <p>This is the date when the scheme's assets and technical provisions were measured.</p>
 
                     <div class="govuk-form-group">
-                      <label class="govuk-label" for="file-upload-1">
-                        Upload a file 
-                      </label>
-                      <div id="event-name-hint" class="govuk-hint" style="margin-bottom: 5px;">
-                        This must be a PDF
-                      </div>
-                      <input class="govuk-file-upload" id="file-upload-1" name="fileUpload1" type="file">
+                      <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                        <div id="passport-issued-hint" class="govuk-hint">
+                          For example, 30 9 2024
+                        </div>
+                        <div class="govuk-date-input" id="passport-issued">
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
+                            </div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                Year
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
                     </div>
 
-                    <form action="submit_confirmation_dates.html" style="margin-top: 30px;">
+                    <form action="submit_upload_sos.html" style="margin-top: 30px;">
                       <div class="govuk-button-group">
                         <button class="govuk-button" data-module="govuk-button">Continue</button>
                         &nbsp;&nbsp;

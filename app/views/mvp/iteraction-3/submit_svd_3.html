@@ -7,18 +7,14 @@
 
     {% include "includes/scripts_head.html" %}
 
-    {% include "includes/header_beta.html" %}
+    {% include "includes/header.html" %}
 
     <div class="govuk-width-container">
-
-      {% include "includes/beta_bar.html" %}
-
-      {% include "includes/psr_bar.html" %}
 
     <!--
     {% include "includes/beta.html" %}
     -->
-
+        
         <!--
         <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
           <ol class="govuk-breadcrumbs__list">
@@ -47,31 +43,60 @@
 
                     <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
 
-                    <h1 class="govuk-heading-l" style="margin-bottom: 30px;">Upload a copy of the actuarial valuation</h1>
+                    <span class="govuk-caption-l" style="margin-bottom: 5px;">Submit scheme valuation </span>
 
-                    <!--
+                    <h1 class="govuk-heading-xl" style="margin-bottom: 30px;">Upload supporting document</h1>
+
                     <div class="govuk-inset-text">
-                      This must be a copy of the actuarial valuation, wich has been signed by the scheme actuary.
+                      This is the document that contains all the information required to support your scheme valuation data.
                     </div>
-                    -->
 
-                    <p>This must be a copy of the actuarial valuation, which has been signed by the scheme actuary.</p>
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                        <label class="govuk-label" for="file-upload-1">
+                          <strong>What information is included in your supporting document?</strong>
+                        </label>
+                        <div id="waste-hint" class="govuk-hint">
+                          Select all that apply.
+                        </div>
+                        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste">
+                              Actuarial valuation
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                              Schedule of contributions
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                              Recovery plan
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
 
                     <div class="govuk-form-group">
                       <label class="govuk-label" for="file-upload-1">
-                        Upload a file 
+                        <strong>Upload a file </strong>
                       </label>
                       <div id="event-name-hint" class="govuk-hint" style="margin-bottom: 5px;">
-                        This must be a PDF
+                        The file must be a PDF.
                       </div>
                       <input class="govuk-file-upload" id="file-upload-1" name="fileUpload1" type="file">
                     </div>
 
-                    <form action="submit_confirmation_dates.html" style="margin-top: 30px;">
+                    <form action="submit_svd_4.html" style="margin-top: 30px;">
                       <div class="govuk-button-group">
                         <button class="govuk-button" data-module="govuk-button">Continue</button>
                         &nbsp;&nbsp;
-                        <a href="exchange_scheme_options.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to scheme options</a>
+                        <a href="scheme_details.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to scheme details</a>
                       </div>
                     </form>
 

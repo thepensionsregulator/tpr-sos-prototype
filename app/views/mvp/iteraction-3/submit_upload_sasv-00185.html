@@ -47,46 +47,29 @@
 
                     <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
 
-                    <h1 class="govuk-heading-l" style="margin-bottom: 30px;">At the effective date, was the scheme in deficit on a technical provisions basis?</h1>
+                    <h1 class="govuk-heading-l" style="margin-bottom: 30px;">Upload a summary of the trustees' assessment of supportable risk over the reliability period</h1> 
 
                     <div class="govuk-inset-text">
-                      If the scheme was in deficit on the effective date of the actuarial valuation, we will also need copies of the recovery plan and schedule of contributions.
+                      Do not upload the complete covenant report. We can only accept the trustees' assessment of supportable risk over the reliability period. 
                     </div>
 
                     <div class="govuk-form-group">
-                      <fieldset class="govuk-fieldset">
-                        <div class="govuk-radios" data-module="govuk-radios">
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="option-1" name="whereDoYouLive" type="radio" value="option-1">
-                            <label class="govuk-label govuk-radios__label" for="option-1">
-                              Yes, the scheme was in deficit
-                            </label>
-                          </div>
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="option-2" name="whereDoYouLive" type="radio" value="option-2">
-                            <label class="govuk-label govuk-radios__label" for="option-2">
-                              No, the scheme was not in deficit
-                            </label>
-                          </div>
-                        </div>
-                      </fieldset>
+                      <label class="govuk-label" for="file-upload-1">
+                        Upload a file 
+                      </label>
+                      <div id="event-name-hint" class="govuk-hint" style="margin-bottom: 5px;">
+                        This must be a PDF
+                      </div>
+                      <input class="govuk-file-upload" id="file-upload-1" name="fileUpload1" type="file">
                     </div>
 
-                    <!--
-                    <form action="submit_upload_valuation.html" style="margin-top: 30px;">
+                    <form action="submit_deficit_question.html" style="margin-top: 30px;">
                       <div class="govuk-button-group">
                         <button class="govuk-button" data-module="govuk-button">Continue</button>
                         &nbsp;&nbsp;
                         <a href="exchange_scheme_options.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to scheme options</a>
                       </div>
                     </form>
-                    -->
-
-                    <div class="govuk-button-group">
-                      <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
-                      &nbsp;&nbsp;
-                      <a class="govuk-link" href="exchange_scheme_options.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to scheme options</a>
-                    </div>
 
                     <br>
                     <br>
@@ -108,18 +91,3 @@
 </body>
 
 </html>
-
-<script>
-  function myFunction() {
-
-      if(document.getElementById('option-1').checked) {
-          document.getElementById('link').href = "submit_upload_deficit_documents.html";
-      }
-
-      if(document.getElementById('option-2').checked) {
-          document.getElementById('link').href = "submit_upload_valuation.html";
-      }
-
-  }
-</script>
-

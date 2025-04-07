@@ -13,7 +13,7 @@
 
       {% include "includes/beta_bar.html" %}
 
-      {% include "includes/psr_bar.html" %}
+      {% include "includes/psr_bar_mvp3.html" %}
 
     <!--
     {% include "includes/beta.html" %}
@@ -46,6 +46,8 @@
                 <div class="govuk-grid-column-two-thirds">
 
                     <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
+
+                    <span class="govuk-caption-l" style="margin-bottom: 10px;">Valuation data submissions</span>
 
                     <h1 class="govuk-heading-l" style="margin-bottom: 20px;">Submition CAS-2024/00317</h1>
 
@@ -111,11 +113,23 @@
                       </tbody>
                     </table>
 
+                    <form action="#0" style="margin-top: 40px;">
+                      <div class="govuk-button-group">
+                        <button class="govuk-button" data-module="govuk-button">View submitted data</button>
+                        &nbsp;&nbsp;
+                        <button class="govuk-button govuk-button--warning" type="submit" style="background-color: #d4351c;box-shadow: 0 2px 0 #55150b;">Cancel submission</button>
+                        &nbsp;&nbsp;
+                        <a href="submittions_landingpage.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Return to valkuation data submissions</a>
+                      </div>
+                    </form>
+
+                    <!--
                     <form action="#0" style="margin-top: 15px;margin-bottom: 10px;">
                       <div class="govuk-button-group">
                         <button class="govuk-button govuk-button--warning" type="submit" style="background-color: #d4351c;box-shadow: 0 2px 0 #55150b;">Cancel submission</button>
                       </div>
                     </form>
+                    -->
 
                     <br>
                     <br>

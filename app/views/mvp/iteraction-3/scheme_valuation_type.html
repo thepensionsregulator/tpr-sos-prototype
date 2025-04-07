@@ -47,11 +47,7 @@
 
                     <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
 
-                    <h1 class="govuk-heading-l" style="margin-bottom: 30px;">Select how you would like to upload the supporting documents.</h1>
-
-                    <div class="govuk-inset-text">
-                      We are asking this question because your scheme is in deficit on the effective date, so we will need copies of the actuarial valuation, the recovery plan and schedule of contributions. <br>These documents will support your submission when TPR assesses the risk of the Statement of Strategy.
-                    </div>
+                    <h1 class="govuk-heading-l" style="margin-bottom: 30px;">Select the scheme valuation type</h1>
 
                     <div class="govuk-form-group">
                       <fieldset class="govuk-fieldset">
@@ -59,13 +55,25 @@
                           <div class="govuk-radios__item">
                             <input class="govuk-radios__input" id="option-1" name="whereDoYouLive" type="radio" value="option-1">
                             <label class="govuk-label govuk-radios__label" for="option-1">
-                              Upload all documents together
+                              Valuation data
                             </label>
                           </div>
                           <div class="govuk-radios__item">
                             <input class="govuk-radios__input" id="option-2" name="whereDoYouLive" type="radio" value="option-2">
                             <label class="govuk-label govuk-radios__label" for="option-2">
-                              Upload each document individually
+                              S179 valuation
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="option-3" name="whereDoYouLive" type="radio" value="option-3">
+                            <label class="govuk-label govuk-radios__label" for="option-3">
+                              NCR valuation
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="option-4" name="whereDoYouLive" type="radio" value="option-4">
+                            <label class="govuk-label govuk-radios__label" for="option-4">
+                              Assets
                             </label>
                           </div>
                         </div>
@@ -85,7 +93,7 @@
                     <div class="govuk-button-group">
                       <a href="" onclick='myFunction()' id="link" style="text-decoration: none;"><button class="govuk-button" data-module="govuk-button" style="display:flex;vertical-align:middle;">Continue</button></a>
                       &nbsp;&nbsp;
-                      <a href="submittions_landingpage.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to submission details</a>
+                      <a href="scheme_details.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to scheme details</a>
                     </div>
 
                     <br>
@@ -113,12 +121,21 @@
   function myFunction() {
 
       if(document.getElementById('option-1').checked) {
-          document.getElementById('link').href = "submit_deficit_upload_supporting_documents_together.html";
+          document.getElementById('link').href = "submit_start_page.html";
       }
 
       if(document.getElementById('option-2').checked) {
-          document.getElementById('link').href = "submit_deficit_upload_supporting_documents_individual_1.html";
+          document.getElementById('link').href = "#";
       }
+
+      if(document.getElementById('option-3').checked) {
+          document.getElementById('link').href = "#";
+      }
+
+      if(document.getElementById('option-4').checked) {
+          document.getElementById('link').href = "#";
+      }
+
 
   }
 </script>

@@ -13,7 +13,7 @@
 
       {% include "includes/beta_bar.html" %}
 
-      {% include "includes/psr_bar.html" %}
+      {% include "includes/psr_bar_mvp3.html" %}
 
     <!--
     {% include "includes/beta.html" %}
@@ -38,16 +38,16 @@
         </nav>
         -->
 
-        <!--<a href="javascript:window.history.back();" class="govuk-back-link">Back</a>-->
+        <a href="javascript:window.history.back();" class="govuk-back-link">Back</a>
         
-        <main class="govuk-main-wrapper" id="main-content" style="padding-top: 40px;">
+        <main class="govuk-main-wrapper" id="main-content" style="padding-top: 20px;">
                   
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
 
                     <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
 
-                    <h1 class="govuk-heading-l" style="margin-bottom: 30px;">Submissions details</h1>
+                    <h1 class="govuk-heading-l" style="margin-bottom: 30px;">Manage scheme valuation </h1>
 
                     <!--<p class="govuk-body">You can manage all your submissions from this page.</p>-->
 
@@ -55,39 +55,45 @@
                       <!--<caption class="govuk-table__caption govuk-table__caption--m">Active pension schemes</caption>-->
                       <thead class="govuk-table__head">
                         <tr class="govuk-table__row">
-                          <th scope="col" class="govuk-table__header app-custom-class">Submission</th>
-                          <th scope="col" class="govuk-table__header app-custom-class">Effective date</th>
-                          <th scope="col" class="govuk-table__header app-custom-class">Submission date</th>
+                          <th scope="col" class="govuk-table__header app-custom-class">Product</th>
+                          <th scope="col" class="govuk-table__header app-custom-class">Submissions</th>
                           <th scope="col" class="govuk-table__header app-custom-class">Status</th>
                         </tr>
                       </thead>
                       <tbody class="govuk-table__body">
                         <tr class="govuk-table__row hover">
-                          <td class="govuk-table__cell"><a href="submition_details.html" style="color:#1d70b8;text-decoration: none;">CAS-2024/00749</a></td>
-                          <td class="govuk-table__cell">30/09/2024</td>
-                          <td class="govuk-table__cell">04/12/2024</td>
+                          <td class="govuk-table__cell"><a href="submittions_landingpage.html" style="color:#1d70b8;text-decoration: none;">Valuation data</a></td>
+                          <td class="govuk-table__cell">3</td>
                           <td class="govuk-table__cell"><strong class="govuk-tag">In review</strong></td>
                         </tr>
                         <tr class="govuk-table__row hover">
-                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">CAS-2022/00804</a></td>
-                          <td class="govuk-table__cell">28/08/2022</td>
-                          <td class="govuk-table__cell">17/11/2022</td>
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">Statement of Strategy</a></td>
+                          <td class="govuk-table__cell">2</td>
+                          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">Pending</strong></td>
+                        </tr>
+                        <tr class="govuk-table__row hover">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">S179 valuation</a></td>
+                          <td class="govuk-table__cell">1</td>
                           <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Accepted</strong></td>
                         </tr>
                         <tr class="govuk-table__row hover">
-                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">CAS-2020/00622</a></td>
-                          <td class="govuk-table__cell">03/10/2020</td>
-                          <td class="govuk-table__cell">25/01/2021</td>
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">NCR valuation</a></td>
+                          <td class="govuk-table__cell">2</td>
+                          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Accepted</strong></td>
+                        </tr>
+                        <tr class="govuk-table__row hover">
+                          <td class="govuk-table__cell"><a href="#0" style="color:#1d70b8;text-decoration: none;">Assets</a></td>
+                          <td class="govuk-table__cell">2</td>
                           <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Accepted</strong></td>
                         </tr>
                       </tbody>
                     </table>
 
-                    <form action="submit_start_page.html" style="margin-top: 30px;">
+                    <form action="scheme_valuation_type.html" style="margin-top: 30px;">
                       <div class="govuk-button-group">
                         <button class="govuk-button" data-module="govuk-button">Submit a new scheme valuation</button>
                         &nbsp;&nbsp;
-                        <a href="exchange_scheme_options.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Return to scheme options</a>
+                        <a href="scheme_details.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Return to pension scheme details</a>
                       </div>
                     </form>
 

@@ -61,18 +61,24 @@
                           <div class="govuk-radios__item">
                             <input class="govuk-radios__input" id="option-2" name="whereDoYouLive" type="radio" value="option-2">
                             <label class="govuk-label govuk-radios__label" for="option-2">
-                              S179 valuation
+                              Statement of Strategy
                             </label>
                           </div>
                           <div class="govuk-radios__item">
                             <input class="govuk-radios__input" id="option-3" name="whereDoYouLive" type="radio" value="option-3">
                             <label class="govuk-label govuk-radios__label" for="option-3">
-                              NCR valuation
+                              S179 valuation
                             </label>
                           </div>
                           <div class="govuk-radios__item">
                             <input class="govuk-radios__input" id="option-4" name="whereDoYouLive" type="radio" value="option-4">
                             <label class="govuk-label govuk-radios__label" for="option-4">
+                              NCR valuation
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="option-5" name="whereDoYouLive" type="radio" value="option-5">
+                            <label class="govuk-label govuk-radios__label" for="option-5">
                               Assets
                             </label>
                           </div>
@@ -133,6 +139,10 @@
       }
 
       if(document.getElementById('option-4').checked) {
+          document.getElementById('link').href = "#";
+      }
+
+      if(document.getElementById('option-5').checked) {
           document.getElementById('link').href = "#";
       }
 

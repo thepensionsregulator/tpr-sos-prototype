@@ -13,7 +13,7 @@
 
       {% include "includes/beta_bar.html" %}
 
-      {% include "includes/psr_bar_mvp4.html" %}
+      {% include "includes/psr_bar.html" %}
 
     <!--
     {% include "includes/beta.html" %}
@@ -47,14 +47,16 @@
 
                     <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
 
-                    <h1 class="govuk-heading-l" style="margin-bottom: 30px;">Confirmation dates</h1>
+                    <h1 class="govuk-heading-l" style="margin-bottom: 30px;">Confirmation</h1>
 
-                    <p class="govuk-body" style="margin-bottom: 10px"><strong>Date the funding and investment strategy was finalised</strong></p>
+                    <!--
+
+                    <p class="govuk-body" style="margin-bottom: 10px"><strong>Date funding and investment strategy was finalised</strong></p>
 
                     <div class="govuk-form-group">
                       <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
                         <div id="passport-issued-hint" class="govuk-hint">
-                          For example, 30 9 2024
+                          For example, 27 3 2021
                         </div>
                         <div class="govuk-date-input" id="passport-issued">
                           <div class="govuk-date-input__item">
@@ -85,12 +87,12 @@
                       </fieldset>
                     </div>
 
-                    <p class="govuk-body" style="margin-bottom: 10px;margin-top: 40px;"><strong>Date the statement of strategy was signed by the chair of trustees</strong></p>
+                    <p class="govuk-body" style="margin-bottom: 10px"><strong>Date the statement of strategy was signed</strong></p>
 
                     <div class="govuk-form-group">
                       <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
                         <div id="passport-issued-hint" class="govuk-hint">
-                          For example, 30 9 2024
+                          For example, 27 3 2021
                         </div>
                         <div class="govuk-date-input" id="passport-issued">
                           <div class="govuk-date-input__item">
@@ -119,13 +121,47 @@
                           </div>
                         </div>
                       </fieldset>
-                    </div>
+                    </div> 
 
-                    <form action="submit_deficit_review_together.html" style="margin-top: 40px;">
+                    -->
+
+                    <p class="govuk-body">By providing the documents and information, you are confirming that:</p>
+
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li>the chair of trustees has signed the statement of strategy</li>
+                    </ul>
+
+                    <!--
+                    <p class="govuk-body">This submission will be regarded by us as fully complying with the requirements referred to in Appendix 1, page 44 of the funding code of practice and the statutory requirement under regulation 8(7)(a) of the Scheme Funding Regulations (SI 2005/3377) and Occupational Pensions Schemes (Funding and investment Strategy and Amendment) Regulations 2023.</p>
+                    -->
+
+                    <!--
+                    <div class="govuk-warning-text">
+                      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                      <strong class="govuk-warning-text__text">
+                        <span class="govuk-visually-hidden">Warning</span>
+                        This submission will be regarded by us as fully complying with the requirements referred to in Appendix 1, page 44 of the funding code of practice and the statutory requirement under regulation 8(7)(a) of the Scheme Funding Regulations (SI 2005/3377) and Occupational Pensions Schemes (Funding and investment Strategy and Amendment) Regulations 2023.
+                      </strong>
+                    </div>
+                    -->
+
+                    <p class="govuk-body">By submitting, you are confirming that, to the best of your knowledge, the details you are providing are correct. </p>
+
+                    <!--
+                    <p class="govuk-body">Lorum</p>
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li>apples</li>
+                      <li>oranges</li>
+                      <li>pears</li>
+                      <li>pears</li>
+                    </ul>
+                    -->
+
+                    <form action="submit_confirmation.html" style="margin-top: 40px;">
                       <div class="govuk-button-group">
-                        <button class="govuk-button" data-module="govuk-button">Continue</button>
+                        <button class="govuk-button" data-module="govuk-button">Submit</button>
                         &nbsp;&nbsp;
-                        <a href="submittions_landingpage.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to submission details</a>
+                        <a href="exchange_scheme_options.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to scheme options</a>
                       </div>
                     </form>
 

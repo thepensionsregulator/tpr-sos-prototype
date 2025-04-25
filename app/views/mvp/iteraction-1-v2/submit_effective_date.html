@@ -13,7 +13,7 @@
 
       {% include "includes/beta_bar.html" %}
 
-      {% include "includes/psr_bar_mvp4.html" %}
+      {% include "includes/psr_bar.html" %}
 
     <!--
     {% include "includes/beta.html" %}
@@ -47,9 +47,15 @@
 
                     <!-- ///////////////////////////////////////  BODY  //////////////////////////////////////// -->
 
-                    <h1 class="govuk-heading-l" style="margin-bottom: 30px;">Confirmation dates</h1>
+                    <h1 class="govuk-heading-l" style="margin-bottom: 30px;">What is the effective date of the actuarial valuation this statement of strategy relates to?</h1>
 
-                    <p class="govuk-body" style="margin-bottom: 10px"><strong>Date the funding and investment strategy was finalised</strong></p>
+                    <!--
+                    <div class="govuk-inset-text">
+                      This is the date when the scheme's assets and technical provisions were measured.
+                    </div>
+                    -->
+
+                    <p>This is the date as at which the scheme's and technical provisions were calculated.</p>
 
                     <div class="govuk-form-group">
                       <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
@@ -85,47 +91,11 @@
                       </fieldset>
                     </div>
 
-                    <p class="govuk-body" style="margin-bottom: 10px"><strong>Date the statement of strategy was signed by the chair of trustees</strong></p>
-
-                    <div class="govuk-form-group">
-                      <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
-                        <div id="passport-issued-hint" class="govuk-hint">
-                          For example, 30 9 2024
-                        </div>
-                        <div class="govuk-date-input" id="passport-issued">
-                          <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
-                                Day
-                              </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric">
-                            </div>
-                          </div>
-                          <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
-                                Month
-                              </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric">
-                            </div>
-                          </div>
-                          <div class="govuk-date-input__item">
-                            <div class="govuk-form-group">
-                              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
-                                Year
-                              </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric">
-                            </div>
-                          </div>
-                        </div>
-                      </fieldset>
-                    </div>
-
-                    <form action="submit_review.html" style="margin-top: 40px;">
+                    <form action="submit_upload_sos.html" style="margin-top: 30px;">
                       <div class="govuk-button-group">
                         <button class="govuk-button" data-module="govuk-button">Continue</button>
                         &nbsp;&nbsp;
-                        <a href="submittions_landingpage.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to submission details</a>
+                        <a href="exchange_scheme_options.html" style="color: #1d70b8;display:flex;vertical-align:middle;">Cancel and return to scheme options</a>
                       </div>
                     </form>
 
